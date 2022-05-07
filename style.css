@@ -1,0 +1,517 @@
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+:root {
+--very-small: 1.2rem;
+--very-medium: 1.6rem;
+--small: 1.4rem;
+--medium: 1.8rem;
+--large: 2.4rem;
+
+--bold: 700;
+--bold-medium: 500;
+
+--light: #ffffff;
+--dark: #201E1C;
+--grey: #BABABA;
+--warm-light: #FAF8F7;
+--warm-dark: #282623;
+
+--primary-color: #F7931A;
+--secondary-color: #1A9AF7;
+--primary-color-soft: #FFE9D5;
+--secondary-color-soft: #E7F5FF;
+}
+
+body {
+    min-width: 320px;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    height: 27.4rem;
+
+    text-align: center;
+
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    margin: 3rem 0;
+}
+
+    /* Texto */
+
+.container h1 {
+    margin: 0 2rem;
+
+    font-size: var(--large);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+
+    color: var(--light);
+}
+
+.container p {
+    margin: 2.5rem 2rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+    line-height: 1.8rem;
+
+    color: var(--primary-color-soft);
+}
+
+    /* Boton */
+
+.container__button {
+    position: absolute;
+    top: 24.6rem;
+    left: calc(50% - 118px);
+
+    width: 22.9rem;
+    padding: 1.2rem 1.6rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold);
+
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: .4rem;
+    background-color: var(--warm-light);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.container__button span {
+    display: inline-block;
+    width: 1.3rem;
+    height: .8rem;
+    margin-left: 1rem;
+
+    background-image: url(assets/icons/down-arrow.svg);
+}
+
+/*MAIN*/
+
+    /* SECTION EXCHANGE COIN */
+
+.section-exchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--warm-light);
+}
+
+.section-exchange img {
+    margin: 5rem 0 4rem;
+}
+
+.section-exchange__text h2 {
+    font-size: var(--large);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+
+    color: var(--warm-dark);
+}
+
+.section-exchange__text p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+    line-height: 1.8rem;
+
+    color: #757575;
+}
+
+        /* Section Table Coins */
+
+/* .section-coins {
+    position: relative;
+} */
+
+.section-coins h3 {
+    text-align: start;
+    margin-left: 1rem;
+
+    font-size: var(--medium);
+    font-weight: var(--bold);
+
+    color: #FF9536;
+}
+
+.section-coins__table {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    margin-top: 2rem;
+
+    grid-gap: .2rem;
+}
+
+.section-coins__table ul {
+    display: inline-block;
+
+    text-align: start;
+
+    list-style: none;
+}
+
+.section-coins__table ul:first-child {
+    width: 10.1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--very-medium);
+    font-weight: var(--bold-medium);
+
+    color: #B5B0AC;
+}
+
+.section-coins__table ul:nth-child(2) {
+    width: 9.5rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--small);
+    font-weight: 400;
+
+    color: #757575;
+}
+
+.section-coins__table ul li {
+    height: 3.9rem;
+    margin-bottom: .1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    background-color: var(--light);
+}
+
+.section-coins__table ul:first-child li:first-child {border-radius: .8rem 0 0 0;}
+.section-coins__table ul:first-child li:last-child {border-radius: 0 0 0 .8rem;}
+.section-coins__table ul:last-child li:first-child {border-radius: 0 .8rem 0 0;}
+.section-coins__table ul:last-child li:last-child {border-radius: 0 0 .8rem 0;}
+
+.trending {
+    display: inline-block;
+    margin-left: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.trending--down { background-image: url(assets/icons/trending-down.svg);}
+.trending--up {background-image: url(assets/icons/trending-up.svg);}
+
+/* .section-coins a {
+    position: absolute;
+    top: calc(40% - .5rem);
+    right: calc(5% - 3rem);
+
+    width: .8rem;
+    height: 1.2rem;
+
+    background-image: url(assets/icons/right-arrow.svg);
+} */
+
+.section-coins p {
+    width: 17.3rem;
+    margin: 2rem 1rem 6rem;
+    padding: .8rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--very-small);
+
+    color: var(--warm-dark);
+    background-color: var(--primary-color-soft);
+    border-radius: .8rem;
+}
+
+        /* SECTION BENEFITS */
+
+.section-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 86rem;
+
+    text-align: center;
+
+    background: var(--dark);
+}
+
+.section-benefits h2 {
+    margin: 0 2rem;
+    padding: 6rem 0 2rem;
+
+    font-size: var(--large);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+
+    color: var(--light);
+}
+
+.section-benefits > p {
+    margin-bottom: 2rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+
+    color: #808080;
+}
+
+            /* Section Benefits Cards */
+
+.section-benefits__cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 15.2rem;
+    max-width: 40rem;
+    margin: 0 1.5rem 1.5rem;
+
+    text-align: start;
+
+    background-color: var(--warm-dark);
+    border-radius: .4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.section-benefits--information {
+    margin-bottom: 3rem;
+}
+
+.section-benefits__cards h3 {
+    margin: 0 1rem 1rem 2rem;
+
+    font-size: var(--medium);
+    font-weight: var(--bold);
+
+    color: var(--light);
+}
+
+.section-benefits__cards p {
+    margin: 0 1rem 0 2rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+    line-height: 1.8rem;
+
+    color: #808080;
+}
+
+.section-benefits__cards span {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 1.5rem 0 1rem 2rem;
+}
+
+.section-benefits--time span {background-image: url(assets/icons/clock.svg);}
+.section-benefits--fees span {background-image: url(assets/icons/eye.svg);}
+.section-benefits--coins span {background-image: url(assets/icons/dollar-sign.svg);}
+.section-benefits--information span {background-image: url(assets/icons/check-circle.svg);}
+
+    /* SECTION BACKGROUND */
+
+.section-background {
+    height: 38.7rem;
+
+    background: url(assets/imgs/bitcoinbaby2x.jpg) center/cover no-repeat;
+}
+
+.section-background h2 {
+    position: relative;
+    top: calc(20% - 2rem);
+
+    text-align: center;
+    font-size: var(--large);
+    font-weight: var(--bold);
+
+    color: var(--light);
+}
+
+        /* SECTION PLANS */
+
+.section-plans {
+    height: 52rem;
+
+    text-align: center;
+
+    background-color: #E5E5E5;
+}
+
+.section-plans > h2 {
+    margin: 0 1rem;
+    padding-top: 6rem;
+
+    font-size: var(--large);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+
+    color: var(--dark);
+}
+
+.section-plans > p {
+    margin: 2rem 2rem 4rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+    line-height: 1.8rem;
+
+    color: #757575;
+}
+
+.section-plans__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 1rem;
+    height: 30rem;
+
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.section-plans__card--annual {
+    position: relative;
+}
+
+.section-plans__card--annual > p {
+    position: absolute;
+    top: -1.5rem;
+    left: calc(30% - 1rem);
+
+    width: 10.1rem;
+    padding: 1rem;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: var(--very-small);
+    font-weight: var(--bold);
+
+    background-color: var(--primary-color);
+    color: var(--light);
+    border-radius: .8rem;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 24.7rem;
+    min-width: 19rem;
+    max-width: 22rem;
+
+    background-color: var(--light);
+    border-radius: .8rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+
+    scroll-snap-align: center;
+}
+
+.plan-card h3 {
+    padding-top: 3rem;
+    
+    font-size: var(--small);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.plan-card__price {
+    margin: .8rem 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    font-weight: var(--bold);
+    letter-spacing: -0.4rem;
+}
+
+.plan-card__price span {
+    position: relative;
+
+    bottom: 3rem;
+    right: .4rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--very-small);
+    font-weight: var(--bold-medium);
+
+    color: #363636;
+}
+
+.plan-card__info {
+    margin: 0 1.5rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--very-small);
+    font-weight: var(--bold-medium);
+    line-height: 1.45rem;
+
+    color: #757575;
+}
+
+.plan-card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.1rem;
+    height: 4.8rem;
+    margin: 2rem 0;
+
+    font-size: var(--small);
+    font-weight: var(--bold);
+
+    background-color: var(--warm-light);
+    color: var(--dark);
+    border: 2px solid var(--primary-color);
+    border-radius: .4rem;
+}
+
+.plan-card__button span {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+
+    background-image: url(assets/icons/orange-right-arrow.svg);
+}
+
+.section-plans__card--monthly {margin-left: 1.8rem;}
+.section-plans__card--corporate {margin-right: 1.8rem;}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+}
+
+.footer-container ul {
+    margin: 3rem 0 2rem;
+
+    list-style: none;
+}
+
+.footer-container ul li {
+    margin-bottom: 1rem;
+
+    font-size: var(--small);
+    font-weight: var(--bold-medium);
+
+    color: var(--light);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
