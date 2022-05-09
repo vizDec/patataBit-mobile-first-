@@ -241,7 +241,6 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 86rem;
 
     text-align: center;
 
@@ -276,7 +275,7 @@ header img {
     width: 90%;
     height: 15.2rem;
     max-width: 40rem;
-    margin: 0 1.5rem 1.5rem;
+    margin: 0 auto 1.5rem;
 
     text-align: start;
 
@@ -514,4 +513,10 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (min-width: 640px) {
+    .section-plans__cards{
+        overflow-x: hidden;
+    }
 }
